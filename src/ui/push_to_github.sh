@@ -25,4 +25,4 @@ git commit -m "$commit_msg"
 # 3) Push to origin/main
 git push origin main
 
-echo "✅ index.html has been pushed to origin/main."
+echo "index.html has been pushed to origin/main."

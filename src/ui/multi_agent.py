@@ -86,7 +86,9 @@ async def run_multi_agent(user_input: str):
                 if html_code:
                     with open("index.html", "w", encoding="utf-8") as f:
                         f.write(html_code)
-                    subprocess.run(["bash", "push_to_github.sh"])
+                    #subprocess.run(["bash", "push_to_github.sh"])
+                    subprocess.run(["push_to_github.bat"], shell=True)
+
                     print("\nHTML code saved and pushed to GitHub.")
                     return
     print("\n⚠️ No approval received after 3 rounds.")
